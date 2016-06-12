@@ -38,7 +38,9 @@ y <- c("V800516","V840463","V880466") # time series respodent i.d. variables
 for (i in x) {
   
   anes <- as.data.frame(read.dta13(paste0("NES",i,".dta"),convert.factors = F))
+  
   year <- print(i)
+  
   anes$year <- year 
   
       for (j in y){
