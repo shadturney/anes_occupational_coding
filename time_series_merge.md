@@ -1,6 +1,7 @@
 # Here's the code for an individual study:
 
 anes_cum <- read.dta13("anes_timeseries_cdf.dta",convert.factors=F) # load cumulative file
+
 anes_84 <- read.dta13("NES1984.dta",convert.factors = F) # load 1984 time series study
 
 anes_84$year <- 1984 # create year i.d. variable in time series study
