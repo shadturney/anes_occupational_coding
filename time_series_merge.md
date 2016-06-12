@@ -21,7 +21,9 @@ anes_84$VCF0006a <- ifelse(nchar(anes_84$V840004) == 1,paste0(anes_84$year,"000"
 # Merging time series study into cumulative file using respondent number var
 
 class(anes_cum$VCF0006a)
+
 class(anes_84$VCF0006a)
+
 anes_84$VCF0006a <- as.numeric(anes_84$VCF0006a)
 
 anes_cum <- merge(anes_cum,anes_84[,c("VCF0006a","V840463")],by="VCF0006a",all.x = T)
