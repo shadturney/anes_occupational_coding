@@ -33,6 +33,7 @@ anes_cum <- merge(anes_cum,anes_84[,c("VCF0006a","V840463")],by="VCF0006a",all.x
 # CODING MULTIPLE MERGES
 
 x <- c(1980,1984,1988)
+
 y <- c("V800516","V840463","V880466") # time series respodent i.d. variables
 
 for (i in x) {
